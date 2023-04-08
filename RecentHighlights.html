@@ -1,55 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="./js/home.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/97fab24941.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/97fab24941.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="./style/RecentHighlights.css">
-</head>
-<body>
-  <div class="uppernav">
-    <div class="appointment">
+    <link rel="stylesheet" href="./style/RecentHighlights.css" />
+  </head>
+  <body>
+    <div class="uppernav">
+      <div class="appointment">
+        <div class="appoint1">
+          <i class="fa-solid fa-clock"></i>
+          <span>Mon - Sat: 9 am to 5 pm </span>
+        </div>
 
-      <div class="appoint1">
-        <i class="fa-solid fa-clock"></i>
-        <span>Mon - Sat: 9 am to 5 pm </span>
+        <div class="appoint2">
+          <i class="fa-solid fa-envelope"></i>
+          <span>info@sswabtrust.org</span>
+        </div>
       </div>
-
-      <div class="appoint2">
-        <i class="fa-solid fa-envelope"></i>
-        <span>info@sswabtrust.org</span>
+      <div class="social-media">
+        <div class="media1">
+          <a href=""
+            ><i class="fa-brands fa-facebook"></i> <span>Facebook</span></a
+          >
+        </div>
+        <div class="media2">
+          <a href=""
+            ><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></a
+          >
+        </div>
       </div>
-
     </div>
-    <div class="social-media">
-      <div class="media1">
-        <a href=""><i class="fa-brands fa-facebook"></i>
-        <span>Facebook</span></a>
-      </div>
-      <div class="media2">
-        <a href=""><i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span></a>
-      </div>
-    </div>
-  </div>
 
-  <div class="nav">
-    <div class="logo">
-      <img src="./images/SSWAB-New-Logo.png" alt="">
-    </div>
-    <div class="nav-items">
-      <ul>
-        <a href="./home.html" class="my-a">
-          <!-- <li >Home</li> -->
+    <div class="nav">
+      <div class="logo">
+        <img src="./images/SSWAB-New-Logo.png" alt="" />
+      </div>
+      <div class="nav-items">
+        <ul>
+          <a href="./home.html" class="my-a">
+            <!-- <li >Home</li> -->
+            <li class="">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0px; color: white"
+              >
+                Home
+              </a>
+              <ul
+                style="
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  height: fit-content;
+                  border: 1px solid white;
+                  border-radius: 10px;
+                  background: rgb(28, 42, 77);
+                  padding-left: 3px;
+                  padding-right: 3px;
+                "
+                class="dropdown-menu"
+                aria-labelledby=""
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./Board_trustees.html"
+                    style="color: white"
+                    >Board Of Trustees</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./Medical Team.html"
+                    style="color: white"
+                    >Our Medical Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./OurTeam.html"
+                    style="color: white"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./home.html"
+                    style="color: white"
+                    >Home</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </a>
+          <a href="./home.html">
+            <li>Free Health Services</li>
+          </a>
+          <a href="./home.html" id="donors">
+            <li>Valuable Donors</li>
+          </a>
+          <a href="./Resources.html">
+            <li>Resources</li>
+          </a>
+          <a href="./RecentHighlights.html">
+            <li>Recent Highlights</li>
+          </a>
+          <!-- <a href=""> -->
           <li class="">
             <a
               class="nav-link dropdown-toggle"
@@ -57,102 +136,100 @@
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false" style="padding: 0px; color: white"
-            >
-              Home
-            </a>
-            <ul style="
-            padding-top: 0px;
-            padding-bottom: 0px;
-            height: fit-content;
-            border: 1px solid white;
-            border-radius: 10px;
-            background: rgb(28, 42, 77);
-            padding-left: 3px;
-            padding-right: 3px;"
-            class="dropdown-menu"
-              aria-labelledby="">
-              <li><a class="dropdown-item"  href="./Board_trustees.html" style="color: white;">Board Of Trustees</a></li>
-              <li><a class="dropdown-item"  href="./Medical Team.html" style="color: white;">Our Medical Team</a></li>
-              <li><a class="dropdown-item"  href="./OurTeam.html" style="color: white;">Our Team</a></li>
-              <li><a class="dropdown-item"  href="./home.html" style="color: white;">Home</a></li>
-
-            </ul>
-          </li>
-        </a>
-        <a href="./home.html">
-          <li>Free Health Services</li>
-        </a>
-        <a href="./home.html" id="donors">
-          <li>Valuable Donors</li>
-        </a>
-        <a href="./Resources.html">
-          <li>Resources</li>
-        </a>
-        <a href="./RecentHighlights.html">
-          <li>Recent Highlights</li>
-        </a>
-        <!-- <a href=""> -->
-          <li class="">
-            <a
-              class="nav-link dropdown-toggle"
-              href=""
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false" style="padding: 0px; color: white"
+              aria-expanded="false"
+              style="padding: 0px; color: white"
             >
               Gallery
             </a>
-            <ul style="
-            padding-top: 0px;
-            padding-bottom: 0px;
-            height: fit-content;
-            border: 1px solid white;
-            border-radius: 10px;
-            background: rgb(28, 42, 77);
-            padding-left: 3px;
-            padding-right: 3px;"
-            class="dropdown-menu"
-              aria-labelledby="">
-              <li><a class="dropdown-item"  href="./Gallery-2021.html" style="color: white;">2021</a></li>
-              <li><a class="dropdown-item"  href="./Gallery-2022.html" style="color: white;">2022</a></li>
-              <li><a class="dropdown-item"  href="./Gallery-2023.html" style="color: white;">2023</a></li>
+            <ul
+              style="
+                padding-top: 0px;
+                padding-bottom: 0px;
+                height: fit-content;
+                border: 1px solid white;
+                border-radius: 10px;
+                background: rgb(28, 42, 77);
+                padding-left: 3px;
+                padding-right: 3px;
+              "
+              class="dropdown-menu"
+              aria-labelledby=""
+            >
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="./Gallery-2021.html"
+                  style="color: white"
+                  >2021</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="./Gallery-2022.html"
+                  style="color: white"
+                  >2022</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="./Gallery-2023.html"
+                  style="color: white"
+                  >2023</a
+                >
+              </li>
             </ul>
           </li>
-        <!-- </a> -->
-        <a href="">
-          <li>Management Profiles</li>
-        </a>
-        <a href="./contact.html">
-          <li>Contact Us</li>
-        </a>
-      </ul>
+          <!-- </a> -->
+          <a href="">
+            <li>Management Profiles</li>
+          </a>
+          <a href="./contact.html">
+            <li>Contact Us</li>
+          </a>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </div>
-  
-
-
 
     <div class="recent">
-        <div class="first-part">
-            <video controls>
-                <source src="./resources/32-1.m4v" type="">
-            </video>
+      <div class="first-part">
+        <video controls>
+          <source src="./resources/32-1.m4v" type="" />
+        </video>
+      </div>
+
+      <div class="second-part">
+        <div class="second-part-video1">
+          <video>
+            <source src="./resources/video1.m4v" type="" />
+          </video>
+          <p>SSWAB 13th Anniversary(Dr Waqar)</p>
         </div>
-        <div class="second-part">
-            <div class="second-part-video1">
-                <video controls>
-                    <source src="./resources/video1.m4v" type="">
-                </video>
-                <p></p>
-            </div>
+        <div class="second-part-video1">
+          <video>
+            <source src="./resources/video1.m4v" type="" />
+          </video>
+          <p>Visit Of Renowned TV Actress's(Nida Yasir)</p>
         </div>
+        <div class="second-part-video1">
+          <video>
+            <source src="./resources/video1.m4v" type="" />
+          </video>
+          <p>Visit Of Legendary Pop Singer Mr. Alamgir</p>
+        </div>
+        <div class="second-part-video1">
+          <video>
+            <source src="./resources/video1.m4v" type="" />
+          </video>
+          <p>SSWAB Int'l Consultants' Clinics Dec 2022</p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
