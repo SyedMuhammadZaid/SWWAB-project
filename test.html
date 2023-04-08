@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+  <body>
+    <div class="first1" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"></div>
+
+    <div class="first1" data-aos="fade-left"></div>
+
+    <div class="first1"></div>
+    <div class="first1" data-aos="fade-in"></div>
+
+    <script>
+      AOS.init({
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+
+  <script>
+    //   var captcha;
+    // function generate() {
+
+    // 	// Clear old input
+    // 	document.getElementById("submit").value = "";
+
+    // 	// Access the element to store
+    // 	// the generated captcha
+    // 	captcha = document.getElementById("image");
+    // 	var uniquechar = "";
+
+    // 	const randomchar =
+    // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    // 	// Generate captcha for length of
+    // 	// 5 with random character
+    // 	for (let i = 1; i < 5; i++) {
+    // 		uniquechar += randomchar.charAt(
+    // 			Math.random() * randomchar.length)
+    // 	}
+
+    // 	// Store generated input
+    // 	captcha.innerHTML = uniquechar;
+    // }
+
+    // function printmsg() {
+    // 	const usr_input = document
+    // 		.getElementById("submit").value;
+
+    // 	// Check whether the input is equal
+    // 	// to generated captcha or not
+    // 	if (usr_input == captcha.innerHTML) {
+    // 		var s = document.getElementById("key")
+    // 			.innerHTML = "Matched";
+    // 		generate();
+    // 	}
+    // 	else {
+    // 		var s = document.getElementById("key")
+    // 			.innerHTML = "not Matched";
+    // 		generate();
+    // 	}
+    // }
+
+    const chars = [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z",
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+    ];
+
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    let currentRandomText = "";
+
+    function generateNewRandomText() {
+      let newText = "";
+      for (let i = 0; i < 5; i++) {
+        const randomIndex = getRandomInt(0, chars.length - 1);
+        newText += chars[randomIndex];
+      }
+      currentRandomText = newText;
+      document.getElementById("random-text").textContent = currentRandomText;
+    }
+
+    // generate the initial random text
+    generateNewRandomText();
+  </script>
+</html>
