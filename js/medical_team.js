@@ -1,6 +1,5 @@
 let main = document.querySelector('.content-box');
 let content = document.querySelector('.content-card');
-
 let intro = document.querySelector('.intro');
 
 const obj1 = [
